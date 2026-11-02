@@ -1,0 +1,46 @@
+PDA: ACEPTADA; configuraciones exploradas: 74
+  00. (q0, he cuts a cake with a knife, Z0) [inicio]
+  01. (q1, he cuts a cake with a knife, S Z0) [epsilon, Z0 -> S Z0]
+  02. (q1, he cuts a cake with a knife, NP VP Z0) [epsilon, S -> NP VP]
+  03. (q1, he cuts a cake with a knife, he VP Z0) [epsilon, NP -> he]
+  04. (q1, cuts a cake with a knife, VP Z0) [he, he -> epsilon]
+  05. (q1, cuts a cake with a knife, VP PP Z0) [epsilon, VP -> VP PP]
+  06. (q1, cuts a cake with a knife, V NP PP Z0) [epsilon, VP -> V NP]
+  07. (q1, cuts a cake with a knife, cuts NP PP Z0) [epsilon, V -> cuts]
+  08. (q1, a cake with a knife, NP PP Z0) [cuts, cuts -> epsilon]
+  09. (q1, a cake with a knife, Det N PP Z0) [epsilon, NP -> Det N]
+  10. (q1, a cake with a knife, a N PP Z0) [epsilon, Det -> a]
+  11. (q1, cake with a knife, N PP Z0) [a, a -> epsilon]
+  12. (q1, cake with a knife, cake PP Z0) [epsilon, N -> cake]
+  13. (q1, with a knife, PP Z0) [cake, cake -> epsilon]
+  14. (q1, with a knife, P NP Z0) [epsilon, PP -> P NP]
+  15. (q1, with a knife, with NP Z0) [epsilon, P -> with]
+  16. (q1, a knife, NP Z0) [with, with -> epsilon]
+  17. (q1, a knife, Det N Z0) [epsilon, NP -> Det N]
+  18. (q1, a knife, a N Z0) [epsilon, Det -> a]
+  19. (q1, knife, N Z0) [a, a -> epsilon]
+  20. (q1, knife, knife Z0) [epsilon, N -> knife]
+  21. (q1, epsilon, Z0) [knife, knife -> epsilon]
+  22. (q2, epsilon, Z0) [epsilon, Z0 -> Z0]
+CYK: ACEPTADA; combinaciones comprobadas: 29
+  Longitud 1: [['NP'], ['V', 'VP'], ['Det'], ['N'], ['P'], ['Det'], ['N']]
+  Longitud 2: [['S'], [], ['NP'], [], [], ['NP']]
+  Longitud 3: [[], ['VP'], [], [], ['PP']]
+  Longitud 4: [['S'], [], [], []]
+  Longitud 5: [[], [], []]
+  Longitud 6: [[], ['VP']]
+  Longitud 7: [['S']]
+  Arbol de derivacion:
+    S -> NP VP
+      NP -> he
+      VP -> VP PP
+        VP -> V NP
+          V -> cuts
+          NP -> Det N
+            Det -> a
+            N -> cake
+        PP -> P NP
+          P -> with
+          NP -> Det N
+            Det -> a
+            N -> knife

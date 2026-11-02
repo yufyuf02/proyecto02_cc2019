@@ -1,0 +1,6 @@
+test_casos (test_proyecto.Pruebas.test_casos) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
