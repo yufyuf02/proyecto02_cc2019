@@ -8,7 +8,6 @@ Implementacion en Python 3, sin dependencias externas, de un PDA no determinista
 python main.py "she eats the cake" --pasos
 python main.py "he cuts a cake with a knife" --metodo pda --pasos
 python main.py "the cat drinks" --metodo cyk --pasos
-python -m unittest -v
 ```
 
 Sin argumento, el programa solicita una frase. Las palabras se separan por espacios y se convierten a minusculas.
@@ -19,7 +18,6 @@ Sin argumento, el programa solicita una frase. Las palabras se separan por espac
 - `pda.py`: simulacion de NPDA mediante exploracion BFS de configuraciones, con registro de trayectoria aceptante.
 - `cyk.py`: tabla CYK y reconstruccion de un arbol de derivacion.
 - `main.py`: interfaz de linea de comandos.
-- `test_proyecto.py`: pruebas automaticas positivas y negativas.
 
 ## Notas
 
